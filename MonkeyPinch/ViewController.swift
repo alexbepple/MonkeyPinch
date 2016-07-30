@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,11 @@ class ViewController: UIViewController {
             view.transform = CGAffineTransformRotate(view.transform, recognizer.rotation)
             recognizer.rotation = 0
         }
+    }
+    
+    func gestureRecognizer(recognizer:UIGestureRecognizer,
+        shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
+        return true
     }
 }
 

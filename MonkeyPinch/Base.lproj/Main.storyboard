@@ -37,6 +37,12 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="TFp-gD-IQQ">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="7QH-eh-7Pa"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Jgo-i7-S8T"/>
+                    </connections>
+                </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zy1-Wx-IZc">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="DsS-ch-vOR"/>
@@ -47,11 +53,6 @@
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="OcP-Yx-AXO"/>
                     </connections>
                 </panGestureRecognizer>
-                <rotationGestureRecognizer id="TFp-gD-IQQ">
-                    <connections>
-                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="7QH-eh-7Pa"/>
-                    </connections>
-                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
         </scene>
