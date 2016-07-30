@@ -35,6 +35,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="monkeyPan" destination="zy1-Wx-IZc" id="kiY-Vc-Wuk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <rotationGestureRecognizer id="TFp-gD-IQQ">
@@ -43,14 +46,14 @@
                         <outlet property="delegate" destination="BYZ-38-t0r" id="Jgo-i7-S8T"/>
                     </connections>
                 </rotationGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="zy1-Wx-IZc">
-                    <connections>
-                        <action selector="handlePan:" destination="BYZ-38-t0r" id="DsS-ch-vOR"/>
-                    </connections>
-                </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="AEV-0L-XMI">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="OcP-Yx-AXO"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zy1-Wx-IZc">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="DsS-ch-vOR"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
