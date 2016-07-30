@@ -26,6 +26,10 @@
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="4In-mh-A2w">
                                 <rect key="frame" x="60" y="289" width="175" height="175"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AEV-0L-XMI" appends="YES" id="flH-PM-b3T"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -35,6 +39,11 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zy1-Wx-IZc">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="DsS-ch-vOR"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="AEV-0L-XMI">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="OcP-Yx-AXO"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
