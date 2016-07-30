@@ -28,5 +28,12 @@ class ViewController: UIViewController {
         }
         recognizer.setTranslation(CGPointZero, inView: self.view)
     }
+    
+    @IBAction func handleRotate(recognizer : UIRotationGestureRecognizer) {
+        if let view = recognizer.view {
+            view.transform = CGAffineTransformRotate(view.transform, recognizer.rotation)
+            recognizer.rotation = 0
+        }
+    }
 }
 

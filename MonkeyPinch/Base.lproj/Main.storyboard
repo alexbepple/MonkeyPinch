@@ -22,6 +22,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="zy1-Wx-IZc" appends="YES" id="gub-04-LNA"/>
+                                    <outletCollection property="gestureRecognizers" destination="TFp-gD-IQQ" appends="YES" id="vBh-43-pJz"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="4In-mh-A2w">
@@ -46,6 +47,11 @@
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="OcP-Yx-AXO"/>
                     </connections>
                 </panGestureRecognizer>
+                <rotationGestureRecognizer id="TFp-gD-IQQ">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="7QH-eh-7Pa"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
         </scene>
