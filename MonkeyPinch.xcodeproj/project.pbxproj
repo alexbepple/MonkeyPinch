@@ -20,6 +20,7 @@
 		20127AFF1D4D18EF00C260F8 /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 20127AF91D4D18EF00C260F8 /* hehehe1.caf */; };
 		20127B001D4D18EF00C260F8 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 20127AFA1D4D18EF00C260F8 /* monkey.png */; };
 		20127B011D4D18EF00C260F8 /* monkey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20127AFB1D4D18EF00C260F8 /* monkey@2x.png */; };
+		2033D7E71D4E57920031D4BB /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2033D7E61D4E57920031D4BB /* TickleGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		20127AF91D4D18EF00C260F8 /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
 		20127AFA1D4D18EF00C260F8 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey.png; sourceTree = "<group>"; };
 		20127AFB1D4D18EF00C260F8 /* monkey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monkey@2x.png"; sourceTree = "<group>"; };
+		2033D7E61D4E57920031D4BB /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		2033D7E81D4E57F90031D4BB /* MonkeyPinch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonkeyPinch-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				20127ACF1D4D189F00C260F8 /* Assets.xcassets */,
 				20127AD11D4D189F00C260F8 /* LaunchScreen.storyboard */,
 				20127AD41D4D189F00C260F8 /* Info.plist */,
+				2033D7E61D4E57920031D4BB /* TickleGestureRecognizer.swift */,
+				2033D7E81D4E57F90031D4BB /* MonkeyPinch-Bridging-Header.h */,
 			);
 			path = MonkeyPinch;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20127ACB1D4D189F00C260F8 /* ViewController.swift in Sources */,
+				2033D7E71D4E57920031D4BB /* TickleGestureRecognizer.swift in Sources */,
 				20127AC91D4D189F00C260F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
@@ -431,6 +438,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.bepple.alex.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -438,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
@@ -445,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.bepple.alex.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -513,6 +524,7 @@
 				20127AEF1D4D189F00C260F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20127AF01D4D189F00C260F8 /* Build configuration list for PBXNativeTarget "MonkeyPinchTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +533,7 @@
 				20127AF21D4D189F00C260F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20127AF31D4D189F00C260F8 /* Build configuration list for PBXNativeTarget "MonkeyPinchUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +542,7 @@
 				20127AF51D4D189F00C260F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
